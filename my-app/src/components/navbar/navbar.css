@@ -1,0 +1,15 @@
+navbar {
+    width: 100%;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 50px;
+    background-color: rgb(56, 56, 56);
+    height: auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+    #cur-sco, #top-sco {
+      font-size: 2rem;
+    }
+  }

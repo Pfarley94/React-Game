@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import characterCard from "./components/characterCard";
+import navbar from "./components/navbar";
+import wrapper from "./components/wrapper";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+function randomizeCharacters(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.roof(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
-}
+  return array;
+};
+
+
 
 export default App;
