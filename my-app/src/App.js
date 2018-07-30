@@ -7,6 +7,7 @@ import Wrapper from "./components/Wrapper";
 import Column from "./Column";
 import Title from "./components/Title";
 import characters from "./characters.json";
+import Row from "./Row";
 
 
 function sortCharacters(array) {
@@ -46,7 +47,7 @@ class App extends Component {
       this.setState({ topScore: newScore });
     }
     else if (newScore === 12) {
-      this.setState({ rightWrong: "You win!" });
+      this.setState({ rightWrong: "Kowabunga!" });
     }
     this.handleSort();
   };
@@ -55,7 +56,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Glaven!",
+      rightWrong: "!",
       clicked: []
     });
     this.handleSort();
@@ -63,7 +64,7 @@ class App extends Component {
 
   handleSort = () => {
     let sortedCharacters = sortCharacters(characters);
-    this.setState({ characters: sortCharacters });
+    this.setState({ characters: sortedCharacters });
   };
 
   render() {
@@ -72,17 +73,15 @@ class App extends Component {
         <Navbar
           title="TMNT CLICKY"
           score={this.state.currentScore}
-          topScore={this.state.topScore}
-          rightWrong={this.state.rightWrong}
         />
 
         <Title>
-          tehmpo
+          TMNT
         </Title>
 
         <Container>
-        
-            {this.state.character.map(character => (
+          <Row>
+            {this.state.characters.map(character => (
               <Column size="md-3 sm-6">
                 <CharacterCard
                   key={character.id}
@@ -95,7 +94,8 @@ class App extends Component {
                 />
               </Column>
             ))}
-        
+          </Row>
+
         </Container>
       </Wrapper>
     );

@@ -1,9 +1,9 @@
 import React from "react";
-import "./container.css";
+import "./Wrapper.css";
 
-const container = props => 
-<div className="container">
+const Wrapper = props => 
+<div className="wrapper">
     {props.children}
 </div>;
 
-export default container;
+export default Wrapper;
