@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "./shredder.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "./rock.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "./raph.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./mikey.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "./MasterSplinter.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "./leo.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "./krang.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "./donnie.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "./bobop.png",
+    "clicked": false
+  }
+]
+
+
+
