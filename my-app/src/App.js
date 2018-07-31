@@ -23,8 +23,6 @@ class App extends Component {
   state = {
     characters,
     currentScore: 0,
-    topScore: 0,
-    rightWrong: "",
     clicked: [],
   };
 
@@ -41,13 +39,13 @@ class App extends Component {
     const newScore = this.state.currentScore + 1;
     this.setState({
       currentScore: newScore,
-      rightWrong: ""
+
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
     }
-    else if (newScore === 12) {
-      this.setState({ rightWrong: "Kowabunga!" });
+    else if (newScore === 8) {
+      this.setState({ currentScore: "Cowabunga! You Won" });
     }
     this.handleSort();
   };
@@ -55,8 +53,6 @@ class App extends Component {
   handleReset = () => {
     this.setState({
       currentScore: 0,
-      topScore: this.state.topScore,
-      rightWrong: "!",
       clicked: []
     });
     this.handleSort();
@@ -68,6 +64,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(CharacterCard)
     return (
       <Wrapper>
         <Navbar
@@ -76,7 +73,7 @@ class App extends Component {
         />
 
         <Title>
-          TMNT
+          Click the pictures to win, but dont click any duplicates!
         </Title>
 
         <Container>
@@ -91,6 +88,7 @@ class App extends Component {
                   handleSort={this.handleSort}
                   id={character.id}
                   image={character.image}
+                  name={character.name}
                 />
               </Column>
             ))}
@@ -101,5 +99,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

@@ -1,9 +1,7 @@
 .title {
   width: 100%;
-  text-align: right;
-  font-size: 2rem;
-  color: #444;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: yellow;
   margin-bottom: 50px;
-  padding-left: 3%;
-  padding-right: 3%;  
 }

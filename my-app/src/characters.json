@@ -1,47 +1,45 @@
 [
   {
     "id": 1,
-    "image": "./shredder.png",
+    "name": "shredder",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/shredder-teenage-mutant-ninja-turtles-1987-5.88.jpg",
     "clicked": false
   },
   {
     "id": 2,
-    "image": "./rock.png",
+    "name": "rocksteady",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/rocksteady-teenage-mutant-ninja-turtles-1987-35.9.jpg",
     "clicked": false
   },
   {
     "id": 3,
-    "image": "./raph.png",
+    "name": "raph",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/raphael-teenage-mutant-ninja-turtles-1987-7.17.jpg",
     "clicked": false
   },
   {
     "id": 4,
-    "image": "./mikey.png",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/michelangelo-teenage-mutant-ninja-turtles-1987-58.8.jpg",
     "clicked": false
   },
   {
     "id": 5,
-    "image": "./MasterSplinter.png",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/splinter-teenage-mutant-ninja-turtles-1987-9.81.jpg",
     "clicked": false
   },
   {
     "id": 6,
-    "image": "./leo.png",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/leonardo-teenage-mutant-ninja-turtles-1987-35.7.jpg",
     "clicked": false
   },
   {
     "id": 7,
-    "image": "./krang.png",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/krang-teenage-mutant-ninja-turtles-turtles-forever-8.31.jpg",
     "clicked": false
   },
   {
     "id": 8,
-    "image": "./donnie.png",
-    "clicked": false
-  },
-  {
-    "id": 9,
-    "image": "./bobop.png",
+    "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/donatello-teenage-mutant-ninja-turtles-1987-71.jpg",
     "clicked": false
   }
 ]
